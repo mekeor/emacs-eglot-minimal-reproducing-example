@@ -1,0 +1,41 @@
+#+begin_src shell
+## node
+echo '{}' > package.json
+
+## typescript
+npm i -D typescript @types/node
+npx tsc --init --strict
+
+## https://eslint.org/docs/latest/use/getting-started#quick-start
+npm i -D eslint
+npm init @eslint/config
+
+## https://prettier.io/docs/en/install.html
+npm i -D prettier
+
+## https://github.com/prettier/eslint-config-prettier
+npm i -D eslint-config-prettier
+# "add "prettier" to the "extends" array in your .eslintrc.* file. Make sure to put it last"
+
+## https://www.fastify.io/docs/latest/Guides/Getting-Started/#install
+npm i fastify
+
+## https://zod.dev/?id=installation
+npm i zod
+
+## https://github.com/turkerdev/fastify-type-provider-zod
+npm i fastify-type-provider-zod
+
+## solid
+## https://www.solidjs.com/guides/typescript
+
+## https://github.com/solidjs-community/eslint-plugin-solid
+npm i -D eslint eslint-plugin-solid
+# {
+#   "parser": "@typescript-eslint/parser",
+#   "plugins": ["solid"],
+#   "extends": ["eslint:recommended", "plugin:solid/typescript"]
+# }
+
+## unocss
+#+end_src
